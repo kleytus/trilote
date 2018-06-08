@@ -1,9 +1,0 @@
-<div>
-	<i>HELLO WORLD</i><input type="text" id="address" size="30"><input type="text" id="lat" size="10">{{lat}}<input type="text" id="lng" size="10">{{lng}}
-</div>
-
-<div>
-	<agm-map [latitude]="lat" [longitude]="lng" (mapClick)="click($event)">
-		<agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-	</agm-map>
-</div>
