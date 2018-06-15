@@ -1,0 +1,16 @@
+ibrary(raster)
+setwd('proyectosR')
+r <- raster('tiznados_canoa.tif')
+coor<-coordinates(r)
+x<-function(x){coor[,1]}
+y<-function(x){coor[,2]}
+lon <- init(r, x, filename='lon.tif', overwrite=TRUE)
+lat <- init(r, y, filename='lat.tif', overwrite=TRUE)
+
+
+par(mfcol=c(1,2))
+image(lon)
+image(lat)
+
+
+
