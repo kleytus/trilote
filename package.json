@@ -1,22 +1,22 @@
 {
   "_args": [
     [
-      "@angular/animations@6.0.3",
+      "@angular/core@6.0.3",
       "C:\\Users\\FRANCISCO LEIGUE\\Francisco Leigue\\Proyecto\\MapWebScraping"
     ]
   ],
-  "_from": "@angular/animations@6.0.3",
-  "_id": "@angular/animations@6.0.3",
+  "_from": "@angular/core@6.0.3",
+  "_id": "@angular/core@6.0.3",
   "_inBundle": false,
-  "_integrity": "sha512-X8ey0dvh2ielxPCJOCcdNPAmKW5toCpzHdbjdZqlR9o6uP1UmzEKHd7Un7jVIINRtq9ZB7vnFWIJl0BA7C8U0g==",
-  "_location": "/@angular/animations",
+  "_integrity": "sha512-YJk0kS/V9C2JFKMHfiw6TNxmfkYWGW4HzqGOm/VoPkvj9O4Erkz/OtOOc8hYGmXFmQz1UpOAByzY2XIlEi72XQ==",
+  "_location": "/@angular/core",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "@angular/animations@6.0.3",
-    "name": "@angular/animations",
-    "escapedName": "@angular%2fanimations",
+    "raw": "@angular/core@6.0.3",
+    "name": "@angular/core",
+    "escapedName": "@angular%2fcore",
     "scope": "@angular",
     "rawSpec": "6.0.3",
     "saveSpec": null,
@@ -25,7 +25,7 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@angular/animations/-/animations-6.0.3.tgz",
+  "_resolved": "https://registry.npmjs.org/@angular/core/-/core-6.0.3.tgz",
   "_spec": "6.0.3",
   "_where": "C:\\Users\\FRANCISCO LEIGUE\\Francisco Leigue\\Proyecto\\MapWebScraping",
   "author": {
@@ -37,17 +37,17 @@
   "dependencies": {
     "tslib": "^1.9.0"
   },
-  "description": "Angular - animations integration with web-animationss",
-  "es2015": "./fesm2015/animations.js",
-  "esm2015": "./esm2015/animations.js",
-  "esm5": "./esm5/animations.js",
-  "fesm2015": "./fesm2015/animations.js",
-  "fesm5": "./fesm5/animations.js",
+  "description": "Angular - the core framework",
+  "es2015": "./fesm2015/core.js",
+  "esm2015": "./esm2015/core.js",
+  "esm5": "./esm5/core.js",
+  "fesm2015": "./fesm2015/core.js",
+  "fesm5": "./fesm5/core.js",
   "homepage": "https://github.com/angular/angular#readme",
   "license": "MIT",
-  "main": "./bundles/animations.umd.js",
-  "module": "./fesm5/animations.js",
-  "name": "@angular/animations",
+  "main": "./bundles/core.umd.js",
+  "module": "./fesm5/core.js",
+  "name": "@angular/core",
   "ng-update": {
     "packageGroup": [
       "@angular/core",
@@ -71,13 +71,14 @@
     ]
   },
   "peerDependencies": {
-    "@angular/core": "6.0.3"
+    "rxjs": "^6.0.0",
+    "zone.js": "~0.8.26"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/angular/angular.git"
   },
   "sideEffects": false,
-  "typings": "./animations.d.ts",
+  "typings": "./core.d.ts",
   "version": "6.0.3"
 }

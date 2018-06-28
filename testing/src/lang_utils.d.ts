@@ -5,9 +5,5 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-/**
- * @module
- * @description
- * Entry point for all public APIs of this package.
- */
-export * from './src/core';
+export declare function getTypeOf(instance: any): any;
+export declare function instantiateType(type: Function, params?: any[]): any;
