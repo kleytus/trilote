@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from './data.service';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-scraping',
@@ -8,21 +8,31 @@ import { DataService } from './data.service';
 })
 export class ScrapingComponent implements OnInit {
 
-	items: Item[];
+	items: Item;
 	constructor(private _dataService: DataService) { 
-		/*this._dataService.getUsers()
-	    .map(res => this.items = res);*/
+
 	}
 
  	ngOnInit() {
+ 		this._dataService.getUsers()
+ 		.subscribe(response => {
+  		this.items = response['data'];
+	      console.log('Servicio:', this.items);
+	      return this.items;
+	  	},
+	  	error => {
+	  		console.log(error);
+	  	});
   	}
 
 }
 
 interface Item {
 
-id : number;
-title : string;
-url : string; 
+latitud : number;
+longitud : number;
+precio : number; 
+seccion : string; 
+tipo : string; 
 
 }
